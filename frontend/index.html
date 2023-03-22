@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WB House Price Prediction</title>
+    <link rel="icon" href="house.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>West Bengal House Price Prediction</h2>
+      <div class="input-group input-group-icon">
+        <input id="bhk" name="bhk" type="number" placeholder="BHK" />
+        <div class="input-icon"><i class="fa fa-bed"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <input
+          id="total_sq_ft"
+          name="total_sq_ft"
+          type="number"
+          placeholder="Total Square Ft."
+        />
+        <div class="input-icon"><i class="fa fa-house"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <input
+          id="price_per_sq_ft"
+          name="price_per_sq_ft"
+          type="number"
+          placeholder="Price per Square Ft."
+        />
+        <div class="input-icon">
+          <i class="fa fa-indian-rupee-sign"></i>
+        </div>
+      </div>
+      <label for="regions">Regions</label>
+      <br />
+      <div class="input-group">
+        <select name="region" id="region"></select>
+      </div>
+      <div class="submit-btn">
+        <button type="submit" id="predict">Predict</button>
+      </div>
+      <span class="prediction-group">
+        <i class="fa fa-indian-rupee-sign"></i>
+        <div id="predicted-price-div" class="predicted-price-div"></div>
+      </span>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+    crossorigin="anonymous"
+  ></script>
+</html>
